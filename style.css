@@ -1,0 +1,113 @@
+/*!
+Theme Name: Test Markup Theme
+Theme URI: https://github.com/jozefini/wp-test-theme
+Author: Jozef
+Author URI: https://github.com/jozefini
+Description: Test Markup Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+Text Domain: theme
+Tags: translation-ready
+*/
+
+:root {
+  --site-max-width: 1024px;
+  --site-gutter: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Layout.
+ */
+.site-header,
+.site-main,
+.site-footer {
+  max-width: var(--site-max-width);
+  padding-left: var(--site-gutter);
+  padding-right: var(--site-gutter);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-footer {
+  margin-top: 3rem;
+  border-top: 1px solid #ddd;
+}
+
+.site-main {
+  border: 1px solid #ddd;
+}
+
+div.site-main {
+  border: 1px solid orange;
+}
+
+section.site-main {
+  border: 1px solid green;
+}
+
+/**
+ * Navigation.
+ */
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__item--dropdown {
+  position: relative;
+}
+
+.menu__item--dropdown:hover .sub-menu {
+  display: block;
+}
+
+.menu__link {
+  display: inline-flex;
+  padding: 1em 1em;
+  white-space: nowrap;
+  color: #000;
+}
+
+.sub-menu {
+  display: none;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+}
+
+/**
+ * Utilities.
+ */
+
+.flex-column {
+  flex-direction: column;
+}
+
+.text-large {
+  font-size: 150%;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-blue {
+  color: blue;
+}
