@@ -91,21 +91,21 @@ class Custom_Nav_Menu extends \Walker_Nav_Menu {
 		}
 
 		if ( ! empty( $item->url ) ) {
-			$link_attributes['href'] = esc_url( $item->url );
+			$link_attributes['href'] = $item->url;
 		}
 
 		if ( ! empty( $item->xfn ) ) {
-			$link_attributes['rel'] = esc_attr( $item->xfn );
+			$link_attributes['rel'] = $item->xfn;
 		} elseif ( '_blank' === $item->target ) {
 			$link_attributes['rel'] = 'noopener noreferrer';
 		}
 
 		if ( ! empty( $item->attr_title ) ) {
-			$link_attributes['title'] = esc_attr( $item->attr_title );
+			$link_attributes['title'] = $item->attr_title;
 		}
 
 		if ( ! empty( $item->target ) ) {
-			$link_attributes['target'] = esc_attr( $item->target );
+			$link_attributes['target'] = $item->target;
 		}
 
 		if ( $item->current ) {
