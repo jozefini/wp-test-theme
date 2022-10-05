@@ -1,5 +1,6 @@
 # WordPress Markup System
 
-Inspired by: \ \
+Inspired by: \
+\
 [Genesis Framework](https://www.studiopress.com/themes/genesis/)\
 [Beans Freamework](https://www.studiopress.com/themes/genesis/) (deprecated framework)
